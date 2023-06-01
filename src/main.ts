@@ -59,7 +59,7 @@ async function checkForPoutnik(browser: Browser, todaysPosts: Set<string>) {
 		await ntfy({ topic: 'kurnik-sopa-poutnik', priority: NtfyPriority.HIGH, title: `Poutník je v Kurnik Šopě!`, message: rawPostMessage, clickURL: postImageLink!, fileAttachmentURL: postImageUrl! });
 	}
 
-	await page.close();
+	await context.close();
 }
 
 let browser: Browser | undefined;
