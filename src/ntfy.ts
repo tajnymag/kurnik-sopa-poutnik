@@ -1,3 +1,5 @@
+import {NTFY_BASE_URL} from "./env.js";
+
 export enum NtfyPriority {
 	MAX = 5,
 	HIGH = 4,
@@ -41,7 +43,7 @@ export async function ntfy({ topic, priority, title, message, clickURL, fileAtta
 		headers.set('Attach', fileAttachmentURL);
 	}
 
-	await fetch(`https://ntfy.sh/${topic}`, {
+	await fetch(`${NTFY_BASE_URL}${topic}`, {
 		method: 'POST',
 		body: message,
 		headers
