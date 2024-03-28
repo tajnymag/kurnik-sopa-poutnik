@@ -1,4 +1,4 @@
-import {NTFY_BASE_URL} from "./env.js";
+import { NTFY_BASE_URL } from "./env.js";
 
 export enum NtfyPriority {
 	MAX = 5,

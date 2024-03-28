@@ -12,7 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "1.0.0-rc.12",
-    "env-var": "^7.4.1"
+    "env-var": "^7.4.1",
+    "pino": "^8.19.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.20",
